@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple & Modern">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/svgs/search.svg">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/22a83ed96c.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.css" />
+    <!-- <link rel="stylesheet" href="assets/styles/css/index.css" /> -->
+    <link href="/assets/styles/css/indexprefixed.css" rel="stylesheet">
+
+    <title>Monticello</title>
+</head>
+
+<body>
+
+    <div class="site">
+
+    <!-- header -->
+    <div id="header" class="header">
+
+        <!-- menu -->
+        <nav class="header__menu">
+
+            <a href="#"><img src="/assets/images/Logo.png" alt="logo"></a>
+
+            <ul class="header__menu-links">
+                <li class="header__menu-link">
+                    <div class="header__menu-dot"></div><a onclick="slideIntoView('header')">ABOUT US</a>
+                </li>
+                <li class="header__menu-link">
+                    <div class="header__menu-dot"></div><a onclick="slideIntoView('projects')">PROJECTS</a>
+                </li>
+                <li class="header__menu-link">
+                    <div class="header__menu-dot"></div><a onclick="slideIntoView('news')">NEWS</a>
+                </li>
+                <li class="header__menu-link">
+                    <div class="header__menu-dot"></div><a onclick="slideIntoView('contact')">CONTACT</a>
+                </li>
+            </ul>
+
+            <ul class="header__menu-socials">
+                <li class="header__menu-social">
+                    <a href="#">
+                        <svg class="svg svg--social" width="40" height="40" viewbox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.7188 21H21.375V28H18.25V21H15.7188V18.0938H18.25V15.9062C18.25 15.0729 18.4062 14.3646 18.7188 13.7812C19.0312 13.1979 19.4688 12.7604 20.0312 12.4688C20.6146 12.1562 21.2812 12 22.0312 12C22.3646 12 22.7188 12.0208 23.0938 12.0625C23.4688 12.0833 23.7604 12.1146 23.9688 12.1562L24.2812 12.1875V14.6562H23.0312C22.4479 14.6562 22.0208 14.8125 21.75 15.125C21.5 15.4167 21.375 15.7812 21.375 16.2188V18.0938H24.1562L23.7188 21Z"
+                                fill="white" />
+                            <circle opacity="0.4" cx="20" cy="20" r="19.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__menu-social">
+                    <a href="#">
+                        <svg class="svg svg--social" width="40" height="40" viewbox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.3438 16.75C26.3646 16.8333 26.375 16.9688 26.375 17.1562C26.375 18.2604 26.1667 19.3646 25.75 20.4688C25.3333 21.5521 24.7396 22.5521 23.9688 23.4688C23.2188 24.3646 22.2396 25.0938 21.0312 25.6562C19.8229 26.2188 18.4896 26.5 17.0312 26.5C15.1979 26.5 13.5208 26.0104 12 25.0312C12.2292 25.0521 12.4896 25.0625 12.7812 25.0625C14.3021 25.0625 15.6667 24.5938 16.875 23.6562C16.1458 23.6562 15.5 23.4479 14.9375 23.0312C14.3958 22.5938 14.0208 22.0521 13.8125 21.4062C14.0208 21.4271 14.2188 21.4375 14.4062 21.4375C14.6979 21.4375 14.9896 21.4062 15.2812 21.3438C14.7812 21.2396 14.3333 21.0312 13.9375 20.7188C13.5417 20.4062 13.2292 20.0312 13 19.5938C12.7708 19.1354 12.6562 18.6458 12.6562 18.125V18.0625C13.1146 18.3333 13.6042 18.4792 14.125 18.5C13.1458 17.8333 12.6562 16.9167 12.6562 15.75C12.6562 15.1667 12.8125 14.6146 13.125 14.0938C13.9375 15.1146 14.9271 15.9271 16.0938 16.5312C17.2812 17.1354 18.5417 17.4688 19.875 17.5312C19.8333 17.2812 19.8125 17.0312 19.8125 16.7812C19.8125 15.8854 20.125 15.1146 20.75 14.4688C21.3958 13.8229 22.1667 13.5 23.0625 13.5C24.0208 13.5 24.8229 13.8438 25.4688 14.5312C26.2188 14.3854 26.9167 14.125 27.5625 13.75C27.3125 14.5208 26.8333 15.125 26.125 15.5625C26.75 15.4792 27.375 15.3021 28 15.0312C27.5417 15.6979 26.9896 16.2708 26.3438 16.75Z"
+                                fill="white" />
+                            <circle opacity="0.4" cx="20" cy="20" r="19.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__menu-social">
+                    <a href="#">
+                        <svg class="svg svg--social" width="40" height="40" viewbox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.4688 17.4688C18.1771 16.7604 19.0312 16.4062 20.0312 16.4062C21.0312 16.4062 21.875 16.7604 22.5625 17.4688C23.2708 18.1562 23.625 19 23.625 20C23.625 21 23.2708 21.8542 22.5625 22.5625C21.875 23.25 21.0312 23.5938 20.0312 23.5938C19.0312 23.5938 18.1771 23.25 17.4688 22.5625C16.7812 21.8542 16.4375 21 16.4375 20C16.4375 19 16.7812 18.1562 17.4688 17.4688ZM18.375 21.6562C18.8333 22.1146 19.3854 22.3438 20.0312 22.3438C20.6771 22.3438 21.2292 22.1146 21.6875 21.6562C22.1458 21.1979 22.375 20.6458 22.375 20C22.375 19.3542 22.1458 18.8021 21.6875 18.3438C21.2292 17.8854 20.6771 17.6562 20.0312 17.6562C19.3854 17.6562 18.8333 17.8854 18.375 18.3438C17.9167 18.8021 17.6875 19.3542 17.6875 20C17.6875 20.6458 17.9167 21.1979 18.375 21.6562ZM24.3438 15.6875C24.5104 15.8333 24.5938 16.0208 24.5938 16.25C24.5938 16.4792 24.5104 16.6771 24.3438 16.8438C24.1979 17.0104 24.0104 17.0938 23.7812 17.0938C23.5521 17.0938 23.3542 17.0104 23.1875 16.8438C23.0208 16.6771 22.9375 16.4792 22.9375 16.25C22.9375 16.0208 23.0208 15.8333 23.1875 15.6875C23.3542 15.5208 23.5521 15.4375 23.7812 15.4375C24.0104 15.4375 24.1979 15.5208 24.3438 15.6875ZM27 17.125C27.0208 17.6875 27.0312 18.6458 27.0312 20C27.0312 21.3542 27.0208 22.3125 27 22.875C26.9375 24.1458 26.5521 25.1354 25.8438 25.8438C25.1562 26.5312 24.1771 26.8958 22.9062 26.9375C22.3438 26.9792 21.3854 27 20.0312 27C18.6771 27 17.7188 26.9792 17.1562 26.9375C15.8854 26.875 14.9062 26.5 14.2188 25.8125C13.9479 25.5625 13.7292 25.2708 13.5625 24.9375C13.3958 24.6042 13.2708 24.2812 13.1875 23.9688C13.125 23.6562 13.0938 23.2917 13.0938 22.875C13.0521 22.3125 13.0312 21.3542 13.0312 20C13.0312 18.6458 13.0521 17.6771 13.0938 17.0938C13.1562 15.8438 13.5312 14.875 14.2188 14.1875C14.9062 13.4792 15.8854 13.0938 17.1562 13.0312C17.7188 13.0104 18.6771 13 20.0312 13C21.3854 13 22.3438 13.0104 22.9062 13.0312C24.1771 13.0938 25.1562 13.4792 25.8438 14.1875C26.5521 14.875 26.9375 15.8542 27 17.125ZM25.5 24.125C25.5625 23.9583 25.6146 23.75 25.6562 23.5C25.6979 23.2292 25.7292 22.9167 25.75 22.5625C25.7708 22.1875 25.7812 21.8854 25.7812 21.6562C25.7812 21.4271 25.7812 21.1042 25.7812 20.6875C25.7812 20.2708 25.7812 20.0417 25.7812 20C25.7812 19.9375 25.7812 19.7083 25.7812 19.3125C25.7812 18.8958 25.7812 18.5729 25.7812 18.3438C25.7812 18.1146 25.7708 17.8229 25.75 17.4688C25.7292 17.0938 25.6979 16.7812 25.6562 16.5312C25.6146 16.2604 25.5625 16.0417 25.5 15.875C25.25 15.2292 24.8021 14.7812 24.1562 14.5312C23.9896 14.4688 23.7708 14.4167 23.5 14.375C23.25 14.3333 22.9375 14.3021 22.5625 14.2812C22.2083 14.2604 21.9167 14.25 21.6875 14.25C21.4792 14.25 21.1562 14.25 20.7188 14.25C20.3021 14.25 20.0729 14.25 20.0312 14.25C19.9896 14.25 19.7604 14.25 19.3438 14.25C18.9271 14.25 18.6042 14.25 18.375 14.25C18.1458 14.25 17.8438 14.2604 17.4688 14.2812C17.1146 14.3021 16.8021 14.3333 16.5312 14.375C16.2812 14.4167 16.0729 14.4688 15.9062 14.5312C15.2604 14.7812 14.8125 15.2292 14.5625 15.875C14.5 16.0417 14.4479 16.2604 14.4062 16.5312C14.3646 16.7812 14.3333 17.0938 14.3125 17.4688C14.2917 17.8229 14.2812 18.1146 14.2812 18.3438C14.2812 18.5521 14.2812 18.875 14.2812 19.3125C14.2812 19.7292 14.2812 19.9583 14.2812 20C14.2812 20.0833 14.2812 20.2812 14.2812 20.5938C14.2812 20.8854 14.2812 21.1354 14.2812 21.3438C14.2812 21.5312 14.2812 21.7812 14.2812 22.0938C14.3021 22.4062 14.3229 22.6771 14.3438 22.9062C14.3646 23.1146 14.3958 23.3333 14.4375 23.5625C14.4792 23.7917 14.5208 23.9792 14.5625 24.125C14.8333 24.7708 15.2812 25.2188 15.9062 25.4688C16.0729 25.5312 16.2812 25.5833 16.5312 25.625C16.8021 25.6667 17.1146 25.6979 17.4688 25.7188C17.8438 25.7396 18.1354 25.75 18.3438 25.75C18.5729 25.75 18.8958 25.75 19.3125 25.75C19.75 25.75 19.9896 25.75 20.0312 25.75C20.0938 25.75 20.3229 25.75 20.7188 25.75C21.1354 25.75 21.4583 25.75 21.6875 25.75C21.9167 25.75 22.2083 25.7396 22.5625 25.7188C22.9375 25.6979 23.25 25.6667 23.5 25.625C23.7708 25.5833 23.9896 25.5312 24.1562 25.4688C24.8021 25.1979 25.25 24.75 25.5 24.125Z"
+                                fill="white" />
+                            <circle opacity="0.4" cx="20" cy="20" r="19.5" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- /menu -->
+
+        <div class="header__wrapper">
+            <div id="header__slider" class="keen-slider header__slider">
+
+                <header class="keen-slider__slide header__slide">
+                    <h1 class="header__slide-title">SIMPLE & MODERN</h1>
+                    <h3 class="header__slide-subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+                </header>
+
+                <div class="keen-slider__slide header__slide">
+                    <p class="header__slide-title">SECOND SLIDE</p>
+                    <h3 class="header__slide-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h3>
+                </div>
+
+                <div class="keen-slider__slide header__slide">
+                    <p class="header__slide-title">THIRD SLIDE</p>
+                    <h3 class="header__slide-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </div>
+
+            </div>
+
+            <!-- dots for the slider -->
+            <div id="header__slider-dots" class="header__slider-dots"></div>
+            <!-- END dots for the slider -->
+
+        </div>
+
+        <!-- scroll button -->
+        <div class="header__scroll">
+            <svg onclick="slideIntoView('projects')" class="svg" width="40" height="40" viewbox="0 0 40 40"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M23.9983 19.3036C23.9983 19.2366 23.9648 19.1613 23.9146 19.111L23.4961 18.6925C23.4459 18.6423 23.3705 18.6088 23.3036 18.6088C23.2366 18.6088 23.1613 18.6423 23.111 18.6925L19.8214 21.9821L16.5318 18.6925C16.4816 18.6423 16.4063 18.6088 16.3393 18.6088C16.264 18.6088 16.197 18.6423 16.1468 18.6925L15.7282 19.111C15.678 19.1613 15.6445 19.2366 15.6445 19.3036C15.6445 19.3705 15.678 19.4459 15.7282 19.4961L19.6289 23.3968C19.6791 23.447 19.7545 23.4805 19.8214 23.4805C19.8884 23.4805 19.9637 23.447 20.014 23.3968L23.9146 19.4961C23.9648 19.4459 23.9983 19.3705 23.9983 19.3036Z" />
+                <circle opacity="0.7" cx="20" cy="20" r="19.5" />
+            </svg>
+        </div>
+        <!-- /scroll button -->
+
+    </div>
+
+    <!-- projects -->
+    <div id="projects" class="projects">
+        <div class="section-title">
+            <div class="section-title__separator"></div>
+            <h2 class="section-title__title">WHAT WE DO</h2>
+        </div>
+
+        <article class="project project--padding-small">
+
+            <div class="project__images">
+                <div
+                    class="project__image project__image--back project__image--blue project__image--top project__image--left">
+                </div>
+                <img class="project__image project__image--front project__image--bottom project__image--right"
+                    src="/assets/images/projectone.png" alt="modern building">
+            </div>
+
+            <div class="project__description">
+                <h4 class="project__description-subtitle">ONE WORLD</h4>
+                <h2 class="project__description-title">TRADE CENTER</h2>
+                <p class="project__description-paragraph">
+                    Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                    The truth is, our thoughts are very powerful.
+                </p>
+                <button class="button">MORE DETAILS</button>
+                <p class="project__description-location"><i class="fas fa-map-marker-alt project__description-pin"></i>
+                    New York City, United States - 1776 feet </p>
+            </div>
+        </article>
+
+        <article class="project project--reverse">
+
+            <div class="project__images">
+                <div
+                    class="project__image project__image--back project__image--indigo project__image--top project__image--right">
+                </div>
+                <img class="project__image project__image--front project__image--bottom project__image--left"
+                    src="/assets/images/projecttwo.png" alt="modern building">
+            </div>
+
+            <div class="project__description">
+                <h4 class="project__description-subtitle">INTERNATIONAL</h4>
+                <h2 class="project__description-title">COMMERCE CENTRE</h2>
+                <p class="project__description-paragraph">
+                    Successful businesses have many things in common,
+                    today we’ll look at the big ‘R’ of recognition and how
+                    a digital advertising network may help.
+                </p>
+                <button class="button">MORE DETAILS</button>
+                <p class="project__description-location"><i class="fas fa-map-marker-alt project__description-pin"></i>
+                    Hong Kong - 1588 feet </p>
+            </div>
+
+        </article>
+
+    </div>
+
+    <!-- news -->
+    <div id="news" class="news">
+
+        <div class="section-title">
+            <div class="section-title__separator section-title__separator--inverted"></div>
+            <h2 class="section-title__title section-title__title--inverted">LATEST NEWS</h2>
+        </div>
+
+        <div class="news__wrapper">
+
+            <div id="news__slider" class="keen-slider news__slider">
+
+                <article class="keen-slider__slide news__slide">
+                    <img class="news__slide-image" src="/assets/images/newsone.png" alt="modern building">
+                    <div class="news__slide-description">
+                        <h4 class="news__slide-description-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p class="news__slide-description-text">Free directories: directories are perfect for customers
+                            that are searching for...</p>
+                        <img class="news__slide-description-author-image" src="/assets/images/news-aljabrun.png"
+                            alt="Alja Brun">
+                        <p class="news__slide-description-author">ALJA BRUN</p>
+                        <p class="news__slide-description-date">20 Jan 2020</p>
+                    </div>
+                </article>
+
+                <article class="keen-slider__slide news__slide">
+                    <img class="news__slide-image" src="/assets/images/newstwo.png" alt="modern building">
+                    <div class="news__slide-description">
+                        <h4 class="news__slide-description-title">EFFECTIVE ADVERTISING POINTERS.</h4>
+                        <p class="news__slide-description-text">Having a home based business is a wonderful asset to
+                            your life...</p>
+                        <img class="news__slide-description-author-image" src="/assets/images/news-dominicfreeman.png"
+                            alt="Dominic Freeman">
+                        <p class="news__slide-description-author">DOMINIC FREEMAN</p>
+                        <p class="news__slide-description-date">13 Dec 2019</p>
+                    </div>
+                </article>
+
+                <article class="keen-slider__slide news__slide">
+                    <img class="news__slide-image" src="/assets/images/newsthree.png" alt="modern building">
+                    <div class="news__slide-description">
+                        <h4 class="news__slide-description-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                        <p class="news__slide-description-text">There are many things that are important to catalog
+                            design...</p>
+                        <img class="news__slide-description-author-image" src="/assets/images/news-aliceward.png"
+                            alt="Alice Ward">
+                        <p class="news__slide-description-author">ALICE WARD</p>
+                        <p class="news__slide-description-date">30 Nov 2019</p>
+                    </div>
+                </article>
+
+                <article class="keen-slider__slide news__slide">
+                    <h4 class="news__slide-description-title">LOREM</h4>
+
+                </article>
+
+                <article class="keen-slider__slide news__slide">
+                    <h4 class="news__slide-description-title">IPSUM</h4>
+                </article>
+
+            </div>
+
+            <!-- .svgs for the slider -->
+            <svg id="arrow-left" class="svg svg--social arrow arrow--left" width="40" height="40" viewbox="0 0 40 40"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.5" cx="20" cy="20" r="19.5" />
+                <path
+                    d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z" />
+            </svg>
+
+            <svg id="arrow-right" class="svg svg--social arrow arrow--right" width="40" height="40" viewbox="0 0 40 40"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.5" cx="20" cy="20" r="19.5" />
+                <path
+                    d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z" />
+            </svg>
+            <!-- END .svgs for the slider -->
+
+        </div>
+
+        <!-- dots for the slider -->
+        <div id="news__slider-dots" class="news__slider-dots"></div>
+        <!-- END dots for the slider -->
+    </div>
+
+    <!-- gallery -->
+    <div id="gallery" class="gallery">
+        <div class="section-title">
+            <div class="section-title__separator"></div>
+            <h2 class="section-title__title">GALLERY</h2>
+        </div>
+
+        <div class="gallery__images">
+            <div class="gallery__image-wrapper gallery__image1">
+                <img class="svg gallery__image-icon" src="/assets/images/svgs/360.svg" alt=" icon 360 degrees">
+            </div>
+            <img class="gallery__image2" src="/assets/images/gallery2.png" alt="modern building number 2">
+            <img class="gallery__image3" src="/assets/images/gallery3.png" alt="modern building number 3">
+            <img class="gallery__image4" src="/assets/images/gallery4.png" alt="modern building number 4">
+            <img class="gallery__image5" src="/assets/images/gallery5.png" alt="modern building number 5">
+        </div>
+
+        <button class="button">SEE MORE</button>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="contact">
+
+        <div id="map" class="contact__map">
+        </div>
+
+        <div class="contact__box">
+
+            <div class="section-title">
+                <div class="section-title__separator"></div>
+                <h2 class="section-title__title">GET IN TOUCH</h2>
+            </div>
+
+            <div class="contact__box-wrapper">
+
+                <div class="contact__box-info">
+                    <p>
+                        <i class="fas fa-map-marker-alt contact__box-icon"></i>
+                        91 Nolan Extensions Suite 670
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt contact__box-icon"></i>
+                        +001 356-868-2454
+                    </p>
+                    <p>
+                        <i class="fas fa-inbox contact__box-icon"></i>
+                        montichello@service.com
+                    </p>
+                    <p>
+                        <i class="far fa-clock contact__box-icon"></i>
+                        From 07:05AM to 19:30PM
+                    </p>
+                </div>
+
+                <form class="contact__box-form">
+
+                    <div class="contact__field">
+                        <input required type="text" class="contact__input" id="fname" name="fname" placeholder="Full Name">
+                    </div>
+
+                    <div class="contact__field">
+                        <input required type="text" class="contact__input" id="email" name="email" placeholder="Email">
+                    </div>
+
+                    <button class="button button--short contact__button">SUBMIT</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__menu">
+            <a href="#"><img src="/assets/images/Logo.png" alt="logo"></a>
+            <ul class="footer__menu-socials">
+                <li class="footer__menu-social">
+                    <a href="#">
+                        <svg class="svg svg--social" width="40" height="40" viewbox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.7188 21H21.375V28H18.25V21H15.7188V18.0938H18.25V15.9062C18.25 15.0729 18.4062 14.3646 18.7188 13.7812C19.0312 13.1979 19.4688 12.7604 20.0312 12.4688C20.6146 12.1562 21.2812 12 22.0312 12C22.3646 12 22.7188 12.0208 23.0938 12.0625C23.4688 12.0833 23.7604 12.1146 23.9688 12.1562L24.2812 12.1875V14.6562H23.0312C22.4479 14.6562 22.0208 14.8125 21.75 15.125C21.5 15.4167 21.375 15.7812 21.375 16.2188V18.0938H24.1562L23.7188 21Z"
+                                fill="white" />
+                            <circle opacity="0.4" cx="20" cy="20" r="19.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__menu-social">
+                    <a href="#">
+                        <svg class="svg svg--social" width="40" height="40" viewbox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.3438 16.75C26.3646 16.8333 26.375 16.9688 26.375 17.1562C26.375 18.2604 26.1667 19.3646 25.75 20.4688C25.3333 21.5521 24.7396 22.5521 23.9688 23.4688C23.2188 24.3646 22.2396 25.0938 21.0312 25.6562C19.8229 26.2188 18.4896 26.5 17.0312 26.5C15.1979 26.5 13.5208 26.0104 12 25.0312C12.2292 25.0521 12.4896 25.0625 12.7812 25.0625C14.3021 25.0625 15.6667 24.5938 16.875 23.6562C16.1458 23.6562 15.5 23.4479 14.9375 23.0312C14.3958 22.5938 14.0208 22.0521 13.8125 21.4062C14.0208 21.4271 14.2188 21.4375 14.4062 21.4375C14.6979 21.4375 14.9896 21.4062 15.2812 21.3438C14.7812 21.2396 14.3333 21.0312 13.9375 20.7188C13.5417 20.4062 13.2292 20.0312 13 19.5938C12.7708 19.1354 12.6562 18.6458 12.6562 18.125V18.0625C13.1146 18.3333 13.6042 18.4792 14.125 18.5C13.1458 17.8333 12.6562 16.9167 12.6562 15.75C12.6562 15.1667 12.8125 14.6146 13.125 14.0938C13.9375 15.1146 14.9271 15.9271 16.0938 16.5312C17.2812 17.1354 18.5417 17.4688 19.875 17.5312C19.8333 17.2812 19.8125 17.0312 19.8125 16.7812C19.8125 15.8854 20.125 15.1146 20.75 14.4688C21.3958 13.8229 22.1667 13.5 23.0625 13.5C24.0208 13.5 24.8229 13.8438 25.4688 14.5312C26.2188 14.3854 26.9167 14.125 27.5625 13.75C27.3125 14.5208 26.8333 15.125 26.125 15.5625C26.75 15.4792 27.375 15.3021 28 15.0312C27.5417 15.6979 26.9896 16.2708 26.3438 16.75Z"
+                                fill="white" />
+                            <circle opacity="0.4" cx="20" cy="20" r="19.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__menu-social">
+                    <a href="#">
+                        <svg class="svg svg--social" width="40" height="40" viewbox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.4688 17.4688C18.1771 16.7604 19.0312 16.4062 20.0312 16.4062C21.0312 16.4062 21.875 16.7604 22.5625 17.4688C23.2708 18.1562 23.625 19 23.625 20C23.625 21 23.2708 21.8542 22.5625 22.5625C21.875 23.25 21.0312 23.5938 20.0312 23.5938C19.0312 23.5938 18.1771 23.25 17.4688 22.5625C16.7812 21.8542 16.4375 21 16.4375 20C16.4375 19 16.7812 18.1562 17.4688 17.4688ZM18.375 21.6562C18.8333 22.1146 19.3854 22.3438 20.0312 22.3438C20.6771 22.3438 21.2292 22.1146 21.6875 21.6562C22.1458 21.1979 22.375 20.6458 22.375 20C22.375 19.3542 22.1458 18.8021 21.6875 18.3438C21.2292 17.8854 20.6771 17.6562 20.0312 17.6562C19.3854 17.6562 18.8333 17.8854 18.375 18.3438C17.9167 18.8021 17.6875 19.3542 17.6875 20C17.6875 20.6458 17.9167 21.1979 18.375 21.6562ZM24.3438 15.6875C24.5104 15.8333 24.5938 16.0208 24.5938 16.25C24.5938 16.4792 24.5104 16.6771 24.3438 16.8438C24.1979 17.0104 24.0104 17.0938 23.7812 17.0938C23.5521 17.0938 23.3542 17.0104 23.1875 16.8438C23.0208 16.6771 22.9375 16.4792 22.9375 16.25C22.9375 16.0208 23.0208 15.8333 23.1875 15.6875C23.3542 15.5208 23.5521 15.4375 23.7812 15.4375C24.0104 15.4375 24.1979 15.5208 24.3438 15.6875ZM27 17.125C27.0208 17.6875 27.0312 18.6458 27.0312 20C27.0312 21.3542 27.0208 22.3125 27 22.875C26.9375 24.1458 26.5521 25.1354 25.8438 25.8438C25.1562 26.5312 24.1771 26.8958 22.9062 26.9375C22.3438 26.9792 21.3854 27 20.0312 27C18.6771 27 17.7188 26.9792 17.1562 26.9375C15.8854 26.875 14.9062 26.5 14.2188 25.8125C13.9479 25.5625 13.7292 25.2708 13.5625 24.9375C13.3958 24.6042 13.2708 24.2812 13.1875 23.9688C13.125 23.6562 13.0938 23.2917 13.0938 22.875C13.0521 22.3125 13.0312 21.3542 13.0312 20C13.0312 18.6458 13.0521 17.6771 13.0938 17.0938C13.1562 15.8438 13.5312 14.875 14.2188 14.1875C14.9062 13.4792 15.8854 13.0938 17.1562 13.0312C17.7188 13.0104 18.6771 13 20.0312 13C21.3854 13 22.3438 13.0104 22.9062 13.0312C24.1771 13.0938 25.1562 13.4792 25.8438 14.1875C26.5521 14.875 26.9375 15.8542 27 17.125ZM25.5 24.125C25.5625 23.9583 25.6146 23.75 25.6562 23.5C25.6979 23.2292 25.7292 22.9167 25.75 22.5625C25.7708 22.1875 25.7812 21.8854 25.7812 21.6562C25.7812 21.4271 25.7812 21.1042 25.7812 20.6875C25.7812 20.2708 25.7812 20.0417 25.7812 20C25.7812 19.9375 25.7812 19.7083 25.7812 19.3125C25.7812 18.8958 25.7812 18.5729 25.7812 18.3438C25.7812 18.1146 25.7708 17.8229 25.75 17.4688C25.7292 17.0938 25.6979 16.7812 25.6562 16.5312C25.6146 16.2604 25.5625 16.0417 25.5 15.875C25.25 15.2292 24.8021 14.7812 24.1562 14.5312C23.9896 14.4688 23.7708 14.4167 23.5 14.375C23.25 14.3333 22.9375 14.3021 22.5625 14.2812C22.2083 14.2604 21.9167 14.25 21.6875 14.25C21.4792 14.25 21.1562 14.25 20.7188 14.25C20.3021 14.25 20.0729 14.25 20.0312 14.25C19.9896 14.25 19.7604 14.25 19.3438 14.25C18.9271 14.25 18.6042 14.25 18.375 14.25C18.1458 14.25 17.8438 14.2604 17.4688 14.2812C17.1146 14.3021 16.8021 14.3333 16.5312 14.375C16.2812 14.4167 16.0729 14.4688 15.9062 14.5312C15.2604 14.7812 14.8125 15.2292 14.5625 15.875C14.5 16.0417 14.4479 16.2604 14.4062 16.5312C14.3646 16.7812 14.3333 17.0938 14.3125 17.4688C14.2917 17.8229 14.2812 18.1146 14.2812 18.3438C14.2812 18.5521 14.2812 18.875 14.2812 19.3125C14.2812 19.7292 14.2812 19.9583 14.2812 20C14.2812 20.0833 14.2812 20.2812 14.2812 20.5938C14.2812 20.8854 14.2812 21.1354 14.2812 21.3438C14.2812 21.5312 14.2812 21.7812 14.2812 22.0938C14.3021 22.4062 14.3229 22.6771 14.3438 22.9062C14.3646 23.1146 14.3958 23.3333 14.4375 23.5625C14.4792 23.7917 14.5208 23.9792 14.5625 24.125C14.8333 24.7708 15.2812 25.2188 15.9062 25.4688C16.0729 25.5312 16.2812 25.5833 16.5312 25.625C16.8021 25.6667 17.1146 25.6979 17.4688 25.7188C17.8438 25.7396 18.1354 25.75 18.3438 25.75C18.5729 25.75 18.8958 25.75 19.3125 25.75C19.75 25.75 19.9896 25.75 20.0312 25.75C20.0938 25.75 20.3229 25.75 20.7188 25.75C21.1354 25.75 21.4583 25.75 21.6875 25.75C21.9167 25.75 22.2083 25.7396 22.5625 25.7188C22.9375 25.6979 23.25 25.6667 23.5 25.625C23.7708 25.5833 23.9896 25.5312 24.1562 25.4688C24.8021 25.1979 25.25 24.75 25.5 24.125Z"
+                                fill="white" />
+                            <circle opacity="0.4" cx="20" cy="20" r="19.5" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="footer__copyright">Copyrights © 2020 Montichello</p>
+
+    </footer>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.js"></script>
+    <script src="assets/scripts/header.js"></script>
+    <script src="assets/scripts/news.js"></script>
+    <script src="assets/scripts/contact.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>

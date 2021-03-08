@@ -1,0 +1,118 @@
+.news {
+  height: 1035px;
+  background-size: cover;
+  background-image: url("/assets/images/newsbackground.png"), linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  // padding-top: 53px;
+  // box-sizing: border-box;
+
+  &__slider {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__slide {
+    width: 370px;
+    height: 514px;
+    background-color: $color-primary;
+
+    &-description {
+      height: 274px;
+      display: grid;
+      grid-template-areas:
+        "title title title title"
+        "title title title title"
+        "text text text text"
+        "text text text text"
+        "author-img author author author"
+        "author-img date date date";
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      padding: 30px 20px;
+      box-sizing: border-box;
+
+      &-title {
+        grid-area: title;
+        @include article-title-font;
+      }
+
+      &-text {
+        grid-area: text;
+        @include article-paragraph-font;
+      }
+
+      &-author-image {
+        grid-area: author-img;
+        border-radius: 50%;
+      }
+
+      &-author {
+        grid-area: author;
+        @include news-author-font;
+        align-self: center;
+      }
+
+      &-date {
+        grid-area: date;
+        @include news-date-font;
+      }
+
+    }
+  }
+}
+
+//keen slider stuff
+
+.news__wrapper {
+  position: relative;
+}
+
+.news__slider-dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  gap: 40px;
+}
+
+.news__slider-dot {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+
+  &:focus {
+      outline: none;
+  }
+
+  &--active {
+      background: $color-primary;
+  }
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 7%;
+}
+
+.arrow--right {
+  left: auto;
+  right: 7%;
+}
+
+//END of keen slider stuff

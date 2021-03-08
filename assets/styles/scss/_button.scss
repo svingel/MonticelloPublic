@@ -1,0 +1,24 @@
+.button {
+    height: 50px;
+    width: 190px;
+    border: 1px solid $color-secondary;
+    background-color: $color-primary;
+    @include button-font;
+
+    &--short {
+        width: 140px;
+        font-size: 18px;
+        line-height: 27px;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    &:hover {
+        border: 3px solid $color-indigo;
+        color: $color-indigo;
+        font-weight: bolder;
+    }
+}

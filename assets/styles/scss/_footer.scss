@@ -1,0 +1,35 @@
+.footer {
+    height: 549px;
+    background-size: cover;
+    background-image: url('/assets/images/footerbackground.png'), 
+    linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 41px;
+
+    &__menu {
+        max-width: 770px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 40px;
+            width: 160px;
+            list-style: none;
+        }
+    }
+
+    &__copyright {
+        max-width: 770px;
+        width: 100%;
+        @include copyright-font;
+    }
+}

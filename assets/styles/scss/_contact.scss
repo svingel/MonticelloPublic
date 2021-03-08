@@ -1,0 +1,82 @@
+.contact {
+    position: relative;
+
+    &__map {
+        height: 700px;
+        width: 100%;
+    }
+
+    &__box {
+        width: 770px;
+        height: 450px;
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px;
+        padding: 60px 60px 68px;
+        box-sizing: border-box;
+        // background-color: turquoise;
+        background-image: url(/assets/images/contactbackround.png);
+        background-color: $color-primary;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        box-shadow: 0px -4px 30px rgba(133, 133, 133, 0.2);
+
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 54px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 290px;
+            height: 196px;
+            @include contact-text-font;
+        }
+
+        &-icon {
+            color: $color-indigo;
+            margin-right: 5px;
+            font-size: smaller;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 310px;
+            height: 195px;
+            @include contact-text-font;
+        }
+    }
+
+    &__field {
+        border-bottom: solid 1px rgba(44, 64, 88, 0.2);
+        padding-bottom: 5px;
+
+        &:hover {
+            border-bottom: solid 1px rgba(44, 64, 88, 1);
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: none;
+
+        &:focus {
+            color: $color-contact;
+        }
+    }
+
+    &__button {
+        align-self: flex-end;
+        justify-self: end;
+    }
+}

@@ -1,0 +1,126 @@
+.header {
+    height: 800px;
+    background-size: cover;
+    background-image: url("/assets/images/headerbackground.png"),
+        linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+    padding-top: 53px;
+    box-sizing: border-box;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 54px;
+        max-width: 1170px;
+        margin: 0 auto;
+
+        &-links {
+            display: flex;
+            justify-content: space-between;
+            height: 18px;
+            width: 515px;
+            list-style: none;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+
+            &:hover div {
+                background-color: $color-primary;
+                cursor: pointer;
+            }
+
+            &:hover a {
+                font-weight: bolder;
+                font-size: medium;
+                cursor: pointer
+            }
+
+        }
+
+        &-link a {
+            @include menu-font;
+        }
+
+        &-dot {
+            display: inline-block;
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+        }
+
+        &-socials {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            width: 160px;
+            list-style: none;
+        }
+    }
+}
+
+.header__wrapper {
+    height: 600px;
+    position: relative;
+}
+
+.header__slider {
+    height: 100%;
+}
+
+.header__slide {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &-title {
+        @include heading-title-font;
+    }
+
+    &-subtitle {
+        @include heading-subtitle-font;
+    }
+}
+
+.header__slider-dots {
+    position: absolute;
+    top: 0;
+    right: 52px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+.header__slider-dot {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &--active {
+        background: $color-primary;
+    }
+}
+
+.header__scroll {
+    width: 100%;
+    text-align: center;
+}

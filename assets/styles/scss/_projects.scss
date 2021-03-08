@@ -1,0 +1,97 @@
+.projects {
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding-top: 140px;
+    box-sizing: border-box;
+
+    &--padding-small {
+        padding-top: 60px;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__images {
+        width: 845px;
+        height: 527px;
+        position: relative;
+    }
+
+    &__image {
+        position: absolute;
+
+        &--back {
+            width: 585px;
+            height: 470px;
+        }
+
+        &--front {
+            width: 630px;
+            height: 470px;
+        }
+
+        &--blue {
+            background-color: $color-blue;
+        }
+
+        &--indigo {
+            background-color: $color-indigo;
+        }
+
+        &--top {
+            top: 0px;
+        }
+
+        &--bottom {
+            bottom: 0px;
+        }
+
+        &--left {
+            left: 0px;
+        }
+
+        &--right {
+            right: 0px;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 140px;
+        box-sizing: border-box;
+
+        &-subtitle {
+            @include project-meta-font;
+        }
+
+        &-title {
+            @include section-title-font;
+        }
+
+        &-paragraph {
+            @include paragraph-font;
+            line-height: 167%;
+            margin: 19px 0 41px 0;
+            max-width: 470px;
+        }
+
+        &-location {
+            margin-top: 60px;
+            @include project-location-font;
+        }
+
+        &-pin {
+            margin-right: 10px;
+            font-size: smaller;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import "myReset";
+@import "fonts";
+@import "variables";
+@import "header";
+@import "projects";
+@import "news";
+@import "section-title";
+@import "gallery";
+@import "button";
+@import "contact";
+@import "footer";
+
+body {
+    background-color: #E5E5E5;
+    width: 100%;
+}
+
+.site {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $color-primary;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.svg {
+    fill: none;
+    stroke: $color-primary;
+
+    &--social:hover {
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        stroke: $color-indigo;
+        cursor: pointer;
+    }
+}

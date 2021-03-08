@@ -1,0 +1,143 @@
+$font-primary: Montserrat, sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-tertiary: "Source Sans Pro", sans-serif;
+
+//fonts
+
+@mixin menu-font {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+}
+
+//h1
+@mixin heading-title-font {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+//h3
+@mixin heading-subtitle-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+    color: white;
+}
+
+@mixin section-title-font {
+    //same as h2 in projects and project
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: rgba(44,64,88,1);
+
+}
+
+//h4
+@mixin project-meta-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(44,64,88,1);
+}
+
+@mixin paragraph-font {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(44,64,88,1);
+}
+
+
+
+@mixin button-font {
+    //project, gallery buttons
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+
+@mixin project-location-font {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+}
+
+//news
+@mixin news-title-font {
+    //same as h2 in projects and project but color
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: white;
+}
+
+@mixin article-title-font {
+    //same as h4 project-meta but bold
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(44,64,88,1);
+}
+
+@mixin article-paragraph-font {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(44,64,88,1);
+}
+
+@mixin news-author-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(44,64,88,1);
+}
+
+@mixin news-date-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(85,183,255,1);
+}
+
+//contact
+@mixin contact-text-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-contact;
+}
+
+//footer
+@mixin copyright-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-primary;    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap');
